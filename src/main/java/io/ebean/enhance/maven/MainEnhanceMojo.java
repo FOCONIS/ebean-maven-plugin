@@ -12,7 +12,7 @@ import org.apache.maven.plugins.annotations.ResolutionScope;
  * Enhancement for src/main classes.
  *
  */
-@Mojo(name = "enhance", defaultPhase = LifecyclePhase.PROCESS_CLASSES, requiresDependencyResolution = ResolutionScope.COMPILE_PLUS_RUNTIME)
+@Mojo(name = "enhance", defaultPhase = LifecyclePhase.PROCESS_CLASSES, requiresDependencyResolution = ResolutionScope.COMPILE_PLUS_RUNTIME, threadSafe = true)
 public class MainEnhanceMojo extends AbstractEnhance {
 
   /**
